@@ -1,0 +1,36 @@
+container: {
+      maxInlineSize: '900px',
+      margin: '40px auto',
+      padding: '30px',
+      fontFamily: 'Inter, system-ui, sans-serif',
+      backgroundColor: '#0f172a', // Sleek dark slate
+      color: '#f8fafc',
+      borderRadius: '16px',
+      boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3)'
+    },
+    header: {
+      fontSize: '2rem',
+      fontWeight: '700',
+      marginBottom: '24px',
+      background: 'linear-gradient(to right, #38bdf8, #818cf8)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+    },
+    filterBar: {
+      margin: '24px 0',
+      display: 'flex',
+      gap: '10px',
+      flexWrap: 'wrap',
+      paddingBottom: '16px',
+      borderBottom: '1px solid #334155'
+    },
+    filterBtn: (isActive) => ({
+      padding: '8px 16px',
+      borderRadius: '20px',
+      border: 'none',
+      backgroundColor: isActive ? '#38bdf8' : '#1e293b',
+      color: isActive ? '#0f172a' : '#94a3b8',
+      fontWeight: '600',
+      cursor: 'pointer',
+      transition: 'all 0.2s ease',
+    })
