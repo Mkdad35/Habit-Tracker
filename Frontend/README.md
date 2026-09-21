@@ -1,16 +1,20 @@
-# React + Vite
+# Habit-Tracker
+A reactive, state-driven Habit Tracker built with React 18+. Implements global Context APIs, complex state transitions via the useReducer hook, multi-category relational filtering, and custom local storage persistence hooks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ⏳ HabitEngine: Reactive Productivity & Progress Tracker
 
-Currently, two official plugins are available:
+A modular frontend architecture built with React to track atomic habits, manage active task profiles, and maintain dynamic completion logging. The application separates processing boundaries cleanly by implementing centralized state workflows through a Context/Reducer architecture, maximizing performance and state transparency across deeply nested view feeds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🎥 Live Demo / Interface Tour
+[Insert Your Live Link or Demo GIF here]
 
-## React Compiler
+### ⚙️ Core Architecture & Features
+*   **Centralized Reducer State Management:** Orchestrates predictable state mutations (Add, Edit, Delete, Toggle Completion) across tracking vectors using a custom `useReducer` action layer.
+*   **Global Context Subsystem:** Leverages React Context APIs (`createContext`, `useContext`) to mitigate prop-drilling, delivering direct parameter bindings to multi-tiered nodes (Filters, Forms, Asset Cards).
+*   **Persistent Custom Hooks:** Implements a custom synchronization hook (`useLocalStorage`) utilizing functional lazily-evaluated state initializers to guarantee cross-session data integrity safely.
+*   **Multi-Select Array Filters:** Dynamic relational tags handling intersection filters, grouping ongoing trackers accurately into custom-created classifications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛠️ Tech Stack
+*   **Framework:** React 18+ (Functional Components, Hooks API)
+*   **State Hooks:** `useReducer`, `useState`, `useEffect`, `useContext`, Custom Initializers
+*   **Styling & UI:** Tailwind CSS / Custom Modules
