@@ -5,9 +5,6 @@ A reactive, state-driven Habit Tracker built with React 18+. Implements global C
 
 A modular frontend architecture built with React to track atomic habits, manage active task profiles, and maintain dynamic completion logging. The application separates processing boundaries cleanly by implementing centralized state workflows through a Context/Reducer architecture, maximizing performance and state transparency across deeply nested view feeds.
 
-### 🎥 Live Demo / Interface Tour
-[Insert Your Live Link or Demo GIF here]
-
 ### ⚙️ Core Architecture & Features
 *   **Centralized Reducer State Management:** Orchestrates predictable state mutations (Add, Edit, Delete, Toggle Completion) across tracking vectors using a custom `useReducer` action layer.
 *   **Global Context Subsystem:** Leverages React Context APIs (`createContext`, `useContext`) to mitigate prop-drilling, delivering direct parameter bindings to multi-tiered nodes (Filters, Forms, Asset Cards).
